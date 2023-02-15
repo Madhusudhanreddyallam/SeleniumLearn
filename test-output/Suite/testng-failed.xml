@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="learn2.madhunew.LaunchBrowser">
+      <class name="TestClass.page_actions">
         <methods>
-          <include name="main"/>
+          <include name="move_ele"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- learn2.madhunew.LaunchBrowser -->
+      </class> <!-- TestClass.page_actions -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

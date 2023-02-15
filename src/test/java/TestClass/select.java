@@ -4,6 +4,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class select extends commonutil  {
@@ -26,12 +27,11 @@ public class select extends commonutil  {
 		
 		List<WebElement> sel_list= sel.getOptions();
 		for(WebElement elew : sel_list)
-		{
-			
-			sel.selectByVisibleText(elew.getText());
-			
-		}Thread.sleep(1000);
-		
+		{		
+			sel.selectByVisibleText(elew.getText());	
+		}
+		Thread.sleep(1000);
+	
 		System.out.println(sel.getAllSelectedOptions()); //get the selected options
 		
 		sel.deselectAll(); //deselectsAll

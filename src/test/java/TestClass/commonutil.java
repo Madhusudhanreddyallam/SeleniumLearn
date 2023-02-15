@@ -14,13 +14,13 @@ public class commonutil {
 	
 	WebDriver driver;
 	JavascriptExecutor js;
-	public  void driver_instantiation (String url) 
+	public  void driver_instantiation (String url) throws InterruptedException 
 	{
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
 	    driver = new ChromeDriver(options);
-		driver.get(url);      
+		driver.get(url);   Thread.sleep(1000);   
 	}
 	
 	public void jse(WebElement ele)
