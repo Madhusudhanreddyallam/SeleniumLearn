@@ -8,18 +8,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class commonutil {
 	
 	WebDriver driver;
 	JavascriptExecutor js;
 	public  void driver_instantiation (String url) throws InterruptedException 
 	{
-		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
-	    driver = new ChromeDriver(options);
+	    WebDriver driver = new ChromeDriver(options);
 		driver.get(url);   Thread.sleep(1000);   
 	}
 	

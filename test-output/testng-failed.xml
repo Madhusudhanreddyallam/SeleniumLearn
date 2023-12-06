@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestClass.page_actions">
+      <class name="TestClass.select">
         <methods>
-          <include name="move_ele"/>
+          <include name="sel_deSel"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestClass.page_actions -->
+      </class> <!-- TestClass.select -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
