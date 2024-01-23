@@ -1,7 +1,6 @@
 package TestClass;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -23,7 +22,7 @@ public class tabs_Switch {
         
 	    Set<String> tabs = driver.getWindowHandles();    
 	    //Internally tabs string are collected into List and then converted into LinkedHashSet and then returns so index is maintained in the Set
-	    int j=0;
+	    int j=1;
 	    
 	    //Method 1
 	    for(String tab : tabs)
@@ -35,19 +34,7 @@ public class tabs_Switch {
 	    	}
 	    	 j++;	    	
 	    }
-	    
-	    //Method 2
-	    Iterator<String> it = tabs.iterator();
-	    while(it.hasNext())
-	    {
-	    	if(j==4)
-	    	{
-	    		driver.switchTo().window(it.next());
-	    		break;
-	    	}
-	    		    		    	
-	    	j++;
-	    }
+	   
 	    
 	    //Method 3 (easy method)
 	    ArrayList<String> tabs_string = new ArrayList<String>(driver.getWindowHandles());
