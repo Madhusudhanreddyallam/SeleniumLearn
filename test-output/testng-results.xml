@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-23T10:42:36Z" name="Default suite" finished-at="2024-01-23T10:42:37Z" duration-ms="748">
+  <suite started-at="2024-02-05T12:57:34Z" name="Default suite" finished-at="2024-02-05T12:57:46Z" duration-ms="11584">
     <groups>
     </groups>
-    <test started-at="2024-01-23T10:42:36Z" name="Default test" finished-at="2024-01-23T10:42:37Z" duration-ms="748">
-      <class name="Utility.ExcelOperations">
-        <test-method signature="getExcelData()[pri:0, instance:Utility.ExcelOperations@54504ecd]" started-at="2024-01-23T10:42:36Z" name="getExcelData" finished-at="2024-01-23T10:42:37Z" duration-ms="732" status="PASS">
+    <test started-at="2024-02-05T12:57:34Z" name="Default test" finished-at="2024-02-05T12:57:46Z" duration-ms="11584">
+      <class name="TestClass.DataProviderTest">
+        <test-method signature="TestChrome(java.lang.String, java.lang.String)[pri:0, instance:TestClass.DataProviderTest@7a220c9a]" started-at="2024-02-05T12:57:34Z" name="TestChrome" data-provider="loginDataList" finished-at="2024-02-05T12:57:40Z" duration-ms="5217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getExcelData -->
-      </class> <!-- Utility.ExcelOperations -->
+        </test-method> <!-- TestChrome -->
+        <test-method signature="TestChrome(java.lang.String, java.lang.String)[pri:0, instance:TestClass.DataProviderTest@7a220c9a]" started-at="2024-02-05T12:57:40Z" name="TestChrome" data-provider="loginDataList" finished-at="2024-02-05T12:57:43Z" duration-ms="3848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestChrome -->
+        <test-method signature="TestChrome(java.lang.String, java.lang.String)[pri:0, instance:TestClass.DataProviderTest@7a220c9a]" started-at="2024-02-05T12:57:43Z" name="TestChrome" data-provider="loginDataList" finished-at="2024-02-05T12:57:46Z" duration-ms="2489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestChrome -->
+      </class> <!-- TestClass.DataProviderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

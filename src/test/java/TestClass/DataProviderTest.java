@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import Utility.DataproviderFunctions;
 public class DataProviderTest {
 	private By userName = By.id("input-email");
 	private By pwd = By.id("input-password");
