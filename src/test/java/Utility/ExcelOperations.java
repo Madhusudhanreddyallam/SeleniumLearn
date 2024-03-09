@@ -15,7 +15,7 @@ public class ExcelOperations {
 	private static final String excelPath = "src/test/java/Utility/prodigylabs_TestData.xlsx";
 
 	public XSSFWorkbook getWorkbookInstance() {
-		try(XSSFWorkbook workbook = new XSSFWorkbook(excelPath);) {	
+		try(XSSFWorkbook workbook = new XSSFWorkbook(excelPath)) {	
 			return workbook;
 		} catch (IOException e) {
 			e.printStackTrace();
